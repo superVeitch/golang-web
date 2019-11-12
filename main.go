@@ -31,7 +31,7 @@ func main()  {
 
 func mock(w http.ResponseWriter, r *http.Request)  {
 	fmt.Println(r)
-	fmt.Fprintf(w, "{\"code\":0,\"message\":\"0\",\"ttl\":1,\"data\":{\"total\":0,\"page_num\":1,\"page_size\":10,\"apps\":[{\"id\":1,\"name\":\"thum_service\",\"env\":\"uat\",\"app_id\":\"appid\",\"language\": \"golang\",\"git_url\":\"xxxx.git\",\"rd_direct\": \"veitch\",\"test_direct\": \"veitch\",\"creator\":\"veitch\",\"ops_time\":\"2019-11-01 10:10:10\"},{\"id\":2,\"name\":\"thum_service1\",\"app_id\":\"appid\",\"env\":\"uat\",\"language\": \"golang\",\"git_url\":\"xxxx.git\",\"rd_direct\": \"veitch\",\"test_direct\": \"veitch\",\"creator\":\"veitch\",\"ops_time\":\"2019-11-01 10:10:10\"}]}}")
+	fmt.Fprintf(w, "{\"code\":0,\"message\":\"0\",\"ttl\":1,\"data\":{\"total\":0,\"page_num\":1,\"page_size\":10,\"apps\":[{\"id\":1,\"name\":\"thum_service\",\"env\":\"uat\",\"app_id\":\"appid\", \"version\":\"1234wqdsaa\",\"language\": \"golang\",\"git_url\":\"xxxx.git\",\"rd_direct\": \"veitch\",\"test_direct\": \"veitch\",\"creator\":\"veitch\",\"ops_time\":\"2019-11-01 10:10:10\"},{\"id\":2,\"name\":\"thum_service1\",\"app_id\":\"appid\",\"env\":\"uat\",\"language\": \"golang\",\"git_url\":\"xxxx.git\",\"rd_direct\": \"veitch\",\"test_direct\": \"veitch\",\"creator\":\"veitch\",\"ops_time\":\"2019-11-01 10:10:10\"}]}}")
 }
 
 func add(w http.ResponseWriter, r *http.Request)  {
