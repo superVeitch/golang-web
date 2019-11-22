@@ -25,7 +25,7 @@ func main()  {
 	http.HandleFunc("/cover/admin/file/detail", func(w http.ResponseWriter, request *http.Request) {
 		fmt.Fprintf(w, "{\"code\":0,\"message\":\"0\",\"ttl\":1,\"data\":{\"name\":\"thum_service\",\"env\":\"uat\",\"cover_total\":0,\"func_cover_total\":1,\"hit_line_total\":2,\"miss_line\":3,\"snapshot_id\":2,\"coverages\":[{\"num\": 1,\"hit\": 3,\"content\": \"import (\"},{\"num\": 2,\"hit\": 90,\"content\": \"  fmt\"},{\"num\": 3,\"hit\": 14,\"content\": \"func main(){\"},{\"num\": 4,\"hit\": 43,\"content\": \"flat.prase()\"}]}}")
 	})
-	http.HandleFunc("/cover/admin/add", add)
+	//http.HandleFunc("/cover/admin/add", add)
 	log.Fatal(s.ListenAndServe())
 }
 
